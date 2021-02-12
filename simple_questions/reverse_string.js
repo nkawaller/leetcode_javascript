@@ -40,9 +40,9 @@ function revForIn(s) {
 
 function revWhile(s) {
     let result = '';
-    let count = s[s.length];
-    while (count > 0) {
-        result += s[count];
+    let count = s.length - 1;
+    while (count >= 0) {
+        result += s[count]; 
         count --;
     }
     return result
@@ -55,4 +55,5 @@ a = 'Reversing a string in JavaScript'
 // console.log(revArrow(a));
 // console.log(revForOf(a));
 // console.log(revForIn(a));
+console.log(revWhile(a));
 console.log(decRev(a));
