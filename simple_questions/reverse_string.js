@@ -37,7 +37,7 @@ function revForIn(s) {
     return result;
 }
 
-
+// While loop
 function revWhile(s) {
     let result = '';
     let count = s.length - 1;
