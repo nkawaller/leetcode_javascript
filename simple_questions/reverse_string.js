@@ -48,6 +48,7 @@ function revWhile(s) {
     return result
 }
 
+	
 
 a = 'Reversing a string in JavaScript'
 
