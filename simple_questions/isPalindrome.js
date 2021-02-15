@@ -1,3 +1,6 @@
+// Strip whitespace and non-alphanumeric
+// str.toLowerCase().replace(/[\W_]/g, '');
+
 const isPalindrome = (s) => {
 	return s === s.split('').reverse().join('');
 }
