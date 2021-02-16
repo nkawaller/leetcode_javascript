@@ -1,5 +1,5 @@
 // Strip whitespace and non-alphanumeric
-// str.toLowerCase().replace(/[\W_]/g, '');
+const clean = (s) => s.toLowerCase().replace(/[\W_]/g, '');
 
 const isPalindrome = (s) => {
 	return s === s.split('').reverse().join('');
@@ -14,14 +14,29 @@ const isPal = (s) => {
 	} return true;
 }
 
+// For...of
+const isPalForOf = (s) => {
+	const cleanS = clean(s);
+	const charArr = cleanS.split('');
+
+	for (let char of charArr) {
+		if (char !== charArr.pop()) {
+			return false;
+		}
+	}
+	return true;
+}
+
 
 
 
 
 let a = 'race a car';
-let b = 'racecar';
+let b = 'A man, a plan, a canal: Panama'
 
 console.log(isPalindrome(a));
 console.log(isPalindrome(b));
 console.log(isPal(a));
 console.log(isPal(b));
+console.log(isPalForOf(a));
+console.log(isPalForOf(b));
