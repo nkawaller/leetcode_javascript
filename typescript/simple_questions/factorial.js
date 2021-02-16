@@ -1,3 +1,4 @@
+// Traditional function
 function fact(n) {
     var result = 1;
     for (var i = 1; i < n + 1; i++) {
@@ -5,9 +6,7 @@ function fact(n) {
     }
     return result;
 }
-var myAdd = function (x, y) {
-    return x + y;
-};
+// Arrow function recursive
 var factRecursive = function (n) {
     if (n == 1) {
         return 1;
