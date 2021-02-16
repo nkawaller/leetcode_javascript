@@ -2,13 +2,15 @@
 const clean = (s) => s.toLowerCase().replace(/[\W_]/g, '');
 
 const isPalindrome = (s) => {
-	return s === s.split('').reverse().join('');
+	const cleanString = clean(s)
+	return cleanString === cleanString.split('').reverse().join('');
 }
 
 const isPal = (s) => {
-	let len = Math.floor(s.length / 2);
+	const cleanString = clean(s)
+	let len = Math.floor(cleanString.length / 2);
 	for (let i = 0; i < len; i++) {
-		if (s[i] !== s[s.length - i - 1]) {
+		if (cleanString[i] !== cleanString[cleanString.length - i - 1]) {
 			return false;
 		} 
 	} return true;
