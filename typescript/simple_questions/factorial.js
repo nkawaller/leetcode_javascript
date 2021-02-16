@@ -5,5 +5,18 @@ function fact(n) {
     }
     return result;
 }
+var myAdd = function (x, y) {
+    return x + y;
+};
+var factRecursive = function (n) {
+    if (n == 1) {
+        return 1;
+    }
+    else {
+        return n * factRecursive(n - 1);
+    }
+};
 console.log(fact(5));
 console.log(fact(7));
+console.log(factRecursive(5));
+console.log(factRecursive(7));
