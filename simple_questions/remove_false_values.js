@@ -45,7 +45,7 @@ const removeFalseForIn = (arr) => {
 
 // Tests
 
-a = [true, true, true, false, false]
+let a = [true, true, false, true, false]
 
 console.log(removeFalseOneLine(a))
 console.log(removeFalse(a))

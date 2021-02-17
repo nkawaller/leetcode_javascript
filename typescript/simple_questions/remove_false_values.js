@@ -16,8 +16,18 @@ var removeFalseForOf = function (arr) {
     var result = [];
     for (var _i = 0, arr_1 = arr; _i < arr_1.length; _i++) {
         var i = arr_1[_i];
-        if (!i) {
+        if (i) {
             result.push(i);
+        }
+    }
+    return result;
+};
+// For...in
+var removeFalseForIn = function (arr) {
+    var result = [];
+    for (var i in arr) {
+        if (arr[i]) {
+            result.push(arr[i]);
         }
     }
     return result;
@@ -26,3 +36,4 @@ var a = [true, true, false, true, false];
 console.log(removeFalseOne(a));
 console.log(removeFalse(a));
 console.log(removeFalseForOf(a));
+console.log(removeFalseForIn(a));

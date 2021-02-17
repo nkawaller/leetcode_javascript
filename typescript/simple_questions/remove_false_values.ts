@@ -30,17 +30,23 @@ const removeFalseForOf = (arr: boolean[]): boolean[] => {
 }
 
 
+// For...in
+const removeFalseForIn = (arr: boolean[]): boolean[] => {
+    let result: boolean[] = []
+    for (let i in arr) {
+        if (arr[i]) {
+            result.push(arr[i])
+        }
+    }
+    return result
+}
 
 
-
-
-
-
-
-
+// Tests
 
 let a: boolean[] = [true, true, false, true, false]
 
 console.log(removeFalseOne(a))
 console.log(removeFalse(a))
 console.log(removeFalseForOf(a))
+console.log(removeFalseForIn(a))
