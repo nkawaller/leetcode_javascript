@@ -2,7 +2,20 @@
 
 
 // One liner
-const removeFalse = (arr: boolean[]): boolean[] => arr.filter(Boolean)
+const removeFalseOne = (arr: boolean[]): boolean[] => arr.filter(Boolean)
+
+
+// For loop
+const removeFalse = (arr: boolean[]): boolean[] => {
+    let result: boolean[] = []
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i]) {
+            result.push(arr[i])
+        }
+    }
+    return result
+
+}
 
 
 
@@ -17,4 +30,5 @@ const removeFalse = (arr: boolean[]): boolean[] => arr.filter(Boolean)
 
 let a: boolean[] = [true, true, false, true, false]
 
+console.log(removeFalseOne(a))
 console.log(removeFalse(a))
