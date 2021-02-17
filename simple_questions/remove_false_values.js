@@ -1,5 +1,6 @@
 // Remove all false values from an array
 
+
 // Filter method
 const removeFalseOneLine = (arr) => arr.filter(Boolean)
 
@@ -15,6 +16,7 @@ const removeFalse = (arr) => {
     return result
 }
 
+
 // For...of
 // For loops return indexes, for...of loops return the actual element
 const removeFalseForOf = (arr) => {
@@ -28,8 +30,24 @@ const removeFalseForOf = (arr) => {
 }
 
 
+// For...in
+// For...in returns the index
+const removeFalseForIn = (arr) => {
+    let result = []
+    for (i in arr) {
+        if (arr[i]) {
+            result.push(arr[i])
+        }
+    }
+    return result
+}
+
+
+// Tests
+
 a = [true, true, true, false, false]
 
 console.log(removeFalseOneLine(a))
 console.log(removeFalse(a))
 console.log(removeFalseForOf(a))
+console.log(removeFalseForIn(a))
