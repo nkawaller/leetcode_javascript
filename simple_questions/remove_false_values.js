@@ -15,8 +15,21 @@ const removeFalse = (arr) => {
     return result
 }
 
+// For...of
+// For loops return indexes, for...of loops return the actual element
+const removeFalseForOf = (arr) => {
+    let result = []
+    for (i of arr) {
+        if (i) {
+            result.push(i)
+        }
+    }
+    return result
+}
+
 
 a = [true, true, true, false, false]
 
 console.log(removeFalseOneLine(a))
 console.log(removeFalse(a))
+console.log(removeFalseForOf(a))
