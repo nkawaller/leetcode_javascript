@@ -46,10 +46,19 @@ const isPalindromeForEach = (s) => {
 	return isPal
 }
 
+/**
+ * Using reduce()
+ */
 
-
-
-
+const isPalReduce = (s) => {
+	const cleanS = clean(s);
+	return cleanS.split('').reduce((match, c, i) => {
+		if (!match) {
+			return false;
+		}
+		return c === cleanS[cleanS.length-1-i];
+	}, true);
+}
 
 
 let a = 'race a car';
@@ -61,5 +70,7 @@ console.log(isPal(a));
 console.log(isPal(b));
 console.log(isPalForOf(a));
 console.log(isPalForOf(b));
-console.log(isPalindromeForEach(a))
-console.log(isPalindromeForEach(b))
+console.log(isPalindromeForEach(a));
+console.log(isPalindromeForEach(b));
+console.log(isPalReduce(a));
+console.log(isPalReduce(b));
