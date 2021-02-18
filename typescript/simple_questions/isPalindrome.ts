@@ -18,8 +18,28 @@ const isPalForEach = (s: string): boolean => {
 }
 
 
+/**
+ * Using reduce()
+ */
+
+const isPalReduce = (s: string) => {
+    const cleanS: string = s.toLowerCase().replace(/[\W_]/g, '');
+    return cleanS.split('').reduceRight((match, c,i) => {
+        if (!match) {
+            return false;
+        }
+        return c === cleanS[cleanS.length-1-i];
+    }, true);
+}
+
+
+
+
+
 let a: string = "A man, a plan, a canal: Panama"
 let b: string = 'Race a car'
 
 console.log(isPalForEach(a))
 console.log(isPalForEach(b))
+console.log(isPalReduce(a));
+console.log(isPalReduce(b));
