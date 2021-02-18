@@ -29,6 +29,21 @@ const isPalForOf = (s) => {
 	return true;
 }
 
+const isPalindromeForEach = (s) => {
+	const cleanS = clean(s);
+
+	let isPal = true;
+
+	cleanS.split('').forEach((char, index) => {
+		if (char !== cleanS[cleanS.length - index - 1]) {
+			isPal = false;
+		}
+	});
+	return isPal
+}
+
+
+
 
 
 
@@ -42,3 +57,5 @@ console.log(isPal(a));
 console.log(isPal(b));
 console.log(isPalForOf(a));
 console.log(isPalForOf(b));
+console.log(isPalindromeForEach(a))
+console.log(isPalindromeForEach(b))
