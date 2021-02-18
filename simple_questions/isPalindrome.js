@@ -29,6 +29,10 @@ const isPalForOf = (s) => {
 	return true;
 }
 
+
+/**
+ * forEach 
+ */
 const isPalindromeForEach = (s) => {
 	const cleanS = clean(s);
 
