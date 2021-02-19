@@ -47,10 +47,12 @@ const isPalEvery = (s: string): boolean => {
 let a: string = "A man, a plan, a canal: Panama"
 let b: string = 'Race a car'
 
-
-console.log(isPalForEach(a))
-console.log(isPalForEach(b))
+console.log('----For Each----')
+console.log(isPalForEach(a));
+console.log(isPalForEach(b));
+console.log('----Reduce----')
 console.log(isPalReduce(a));
 console.log(isPalReduce(b));
+console.log('----Every----')
 console.log(isPalEvery(a));
 console.log(isPalEvery(b));
