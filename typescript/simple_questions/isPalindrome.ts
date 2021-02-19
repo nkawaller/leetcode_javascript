@@ -33,13 +33,24 @@ const isPalReduce = (s: string) => {
 }
 
 
+/**
+ * Using every()
+ */
+
+const isPalEvery = (s: string): boolean => {
+    const cleanS: string = s.toLowerCase().replace(/[\W_]/g, '');
+    return cleanS.split('').every((c,i) => c === cleanS[cleanS.length - 1 - i])
+}
 
 
 
 let a: string = "A man, a plan, a canal: Panama"
 let b: string = 'Race a car'
 
+
 console.log(isPalForEach(a))
 console.log(isPalForEach(b))
 console.log(isPalReduce(a));
 console.log(isPalReduce(b));
+console.log(isPalEvery(a));
+console.log(isPalEvery(b));

@@ -25,9 +25,18 @@ var isPalReduce = function (s) {
         return c === cleanS[cleanS.length - 1 - i];
     }, true);
 };
+/**
+ * Using every()
+ */
+var isPalEvery = function (s) {
+    var cleanS = s.toLowerCase().replace(/[\W_]/g, '');
+    return cleanS.split('').every(function (c, i) { return c === cleanS[cleanS.length - 1 - i]; });
+};
 var a = "A man, a plan, a canal: Panama";
 var b = 'Race a car';
 console.log(isPalForEach(a));
 console.log(isPalForEach(b));
 console.log(isPalReduce(a));
 console.log(isPalReduce(b));
+console.log(isPalEvery(a));
+console.log(isPalEvery(b));
