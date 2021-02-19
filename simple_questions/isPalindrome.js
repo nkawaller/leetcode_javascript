@@ -81,14 +81,19 @@ const isPalReduce = (s) => {
 let a = 'race a car';
 let b = 'A man, a plan, a canal: Panama'
 
+console.log('----Reverse----')
 console.log(isPalindrome(a));
 console.log(isPalindrome(b));
+console.log('----For Loop----');
 console.log(isPal(a));
 console.log(isPal(b));
+console.log('----For Of----');
 console.log(isPalForOf(a));
 console.log(isPalForOf(b));
+console.log('----For Each----');
 console.log(isPalindromeForEach(a));
 console.log(isPalindromeForEach(b));
+console.log('----Reduce----');
 console.log(isPalReduce(a));
 console.log(isPalReduce(b));
 console.log('----Every------');
