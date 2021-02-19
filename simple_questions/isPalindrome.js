@@ -61,6 +61,23 @@ const isPalReduce = (s) => {
 }
 
 
+/**
+ * Using every()
+ */
+
+ const isPalEvery = (s) => {
+	 const cleanS = clean(s);
+	 return cleanS.split('').every((c,i) => c === cleanS[cleanS.length-1-i]);
+ }
+
+
+
+
+
+ /**
+  * Tests
+  */
+
 let a = 'race a car';
 let b = 'A man, a plan, a canal: Panama'
 
@@ -74,3 +91,6 @@ console.log(isPalindromeForEach(a));
 console.log(isPalindromeForEach(b));
 console.log(isPalReduce(a));
 console.log(isPalReduce(b));
+console.log('----Every------');
+console.log(isPalEvery(a));
+console.log(isPalEvery(b));
