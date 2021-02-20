@@ -7,6 +7,18 @@ function fact(n: number): number {
     return result
 }
 
+
+/**
+ * For...of 
+ */
+const factForOf = (arr: number[]): number => {
+    let result: number = 1
+    for (let i of arr) {
+        result *= i
+    }
+    return result
+}
+
 // Arrow function recursive
 const factRecursive = (n: number): number => {
     if (n == 1) {
@@ -23,6 +35,8 @@ console.log(fact(5))
 console.log(fact(7))
 console.log(factRecursive(5))
 console.log(factRecursive(7))
+console.log(factForOf([1,2,3,4,5]));
+console.log(factForOf([1,2,3,4,5,6,7]));
 
 
 
