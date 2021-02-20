@@ -1,4 +1,6 @@
-// Traditional function
+/**
+ * For Loop
+ */
 function fact(n: number): number {
     let result = 1
     for (let i = 1; i < n+1; i++) {
@@ -20,7 +22,9 @@ const factForOf = (arr: number[]): number => {
 }
 
 
-// Arrow function recursive
+/**
+ * Recursive 
+ */
 const factRecursive = (n: number): number => {
     if (n == 1) {
         return 1
