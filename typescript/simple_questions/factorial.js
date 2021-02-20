@@ -1,4 +1,6 @@
-// Traditional function
+/**
+ * For Loop
+ */
 function fact(n) {
     var result = 1;
     for (var i = 1; i < n + 1; i++) {
@@ -17,7 +19,9 @@ var factForOf = function (arr) {
     }
     return result;
 };
-// Arrow function recursive
+/**
+ * Recursive
+ */
 var factRecursive = function (n) {
     if (n == 1) {
         return 1;
