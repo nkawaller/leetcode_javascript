@@ -26,9 +26,17 @@ var factRecursive = function (n) {
         return n * factRecursive(n - 1);
     }
 };
+/**
+ *  Reduce solution
+ */
+var factReduce = function (arr) {
+    return arr.reduce(function (result, i) { return result * i; });
+};
 console.log(fact(5));
 console.log(fact(7));
 console.log(factRecursive(5));
 console.log(factRecursive(7));
 console.log(factForOf([1, 2, 3, 4, 5]));
 console.log(factForOf([1, 2, 3, 4, 5, 6, 7]));
+console.log(factReduce([1, 2, 3, 4, 5]));
+console.log(factReduce([1, 2, 3, 4, 5, 6, 7]));
