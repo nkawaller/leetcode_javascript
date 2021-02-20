@@ -9,6 +9,19 @@ const fact = (n) => {
 	return result
 }
 
+
+/**
+ * For...of 
+ */
+const factForOf = (n) => {
+	let result = 1;
+	for (i of n) {
+		result *= i
+	}
+	return result;
+}
+
+
 /**
  * Recursive 
  */
@@ -30,11 +43,12 @@ const factReduce = (arr) => {
 
 
 
-
 console.log(fact(5));
 console.log(fact(7));
 console.log(recursiveFact(5));
 console.log(recursiveFact(7));
 console.log(factReduce([1,2,3,4,5]));
 console.log(factReduce([1,2,3,4,5,6,7]));
+console.log(factForOf([1,2,3,4,5]));
+console.log(factForOf([1,2,3,4,5,6,7]));
 
