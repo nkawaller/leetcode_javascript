@@ -32,8 +32,27 @@ const repeatString = (s: string, n: number): string => {
      return result
  }
 
+
+ /**
+  * Recursive solution
+  */
+
+const repeatStringRecursive = (s: string, n: number): string => {
+    if (n === 1) {
+        return s
+    } else {
+        return s + repeatStringRecursive(s, n-1)
+    }
+}
+
+
+/**
+ * Tests
+ */
+
 let a: string = 'Repeating strings'
 
 // console.log(repeatStringOneLine(a, 7));
 console.log(repeatString(a, 7));
 console.log(repeatStringWhile(a, 3))
+console.log(repeatStringRecursive(a, 5))

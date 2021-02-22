@@ -21,7 +21,22 @@ var repeatStringWhile = function (s, n) {
     }
     return result;
 };
+/**
+ * Recursive solution
+ */
+var repeatStringRecursive = function (s, n) {
+    if (n === 1) {
+        return s;
+    }
+    else {
+        return s + repeatStringRecursive(s, n - 1);
+    }
+};
+/**
+ * Tests
+ */
 var a = 'Repeating strings';
 // console.log(repeatStringOneLine(a, 7));
 console.log(repeatString(a, 7));
 console.log(repeatStringWhile(a, 3));
+console.log(repeatStringRecursive(a, 5));
