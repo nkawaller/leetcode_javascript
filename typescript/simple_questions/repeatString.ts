@@ -1,6 +1,13 @@
 // Given a string, and a number, return the string repeated that number of times
 
-let s: string = 'Repeating strings'
+
+
+const repeatStringOneLine = (s: string, n: number): string => s.repeat(n)
+
+
+/**
+ * For loop
+ */
 
 const repeatString = (s: string, n: number): string => {
     let result: string = ''
@@ -12,4 +19,7 @@ const repeatString = (s: string, n: number): string => {
 } 
 
 
-console.log(repeatString(s, 7));
+let a: string = 'Repeating strings'
+
+console.log(repeatStringOneLine(a, 7));
+console.log(repeatString(a, 7));
