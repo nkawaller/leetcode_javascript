@@ -19,7 +19,21 @@ const repeatString = (s: string, n: number): string => {
 } 
 
 
+/**
+ * While loop
+ */
+
+ const repeatStringWhile = (s: string, n: number): string => {
+     let result: string = ''
+     while (n > 0) {
+         result += s
+         n --;
+     }
+     return result
+ }
+
 let a: string = 'Repeating strings'
 
 // console.log(repeatStringOneLine(a, 7));
 console.log(repeatString(a, 7));
+console.log(repeatStringWhile(a, 3))
