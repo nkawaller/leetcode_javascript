@@ -2,7 +2,7 @@
 
 
 
-// const repeatStringOneLine = (s: string, n: number): string => s.repeat(n)
+const repeatStringOneLine = (s: string, n: number): string => s.repeat(n)
 
 
 /**
@@ -52,7 +52,7 @@ const repeatStringRecursive = (s: string, n: number): string => {
 
 let a: string = 'Repeating strings'
 
-// console.log(repeatStringOneLine(a, 7));
-console.log(repeatString(a, 7));
-console.log(repeatStringWhile(a, 3))
-console.log(repeatStringRecursive(a, 5))
+console.log(repeatStringOneLine(a, 7));
+// console.log(repeatString(a, 7));
+// console.log(repeatStringWhile(a, 3))
+// console.log(repeatStringRecursive(a, 5))
