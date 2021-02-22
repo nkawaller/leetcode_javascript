@@ -2,7 +2,7 @@
 
 
 
-const repeatStringOneLine = (s: string, n: number): string => s.repeat(n)
+// const repeatStringOneLine = (s: string, n: number): string => s.repeat(n)
 
 
 /**
@@ -21,5 +21,5 @@ const repeatString = (s: string, n: number): string => {
 
 let a: string = 'Repeating strings'
 
-console.log(repeatStringOneLine(a, 7));
+// console.log(repeatStringOneLine(a, 7));
 console.log(repeatString(a, 7));
