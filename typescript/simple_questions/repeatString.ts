@@ -50,9 +50,9 @@ const repeatStringRecursive = (s: string, n: number): string => {
  * Tests
  */
 
-let a: string = 'Repeating strings'
+let firstString: string = 'Repeating strings'
 
-console.log(repeatStringOneLine(a, 7));
-// console.log(repeatString(a, 7));
-// console.log(repeatStringWhile(a, 3))
-// console.log(repeatStringRecursive(a, 5))
+console.log(repeatStringOneLine(firstString, 7));
+console.log(repeatString(firstString, 7));
+console.log(repeatStringWhile(firstString, 3))
+console.log(repeatStringRecursive(firstString, 5))

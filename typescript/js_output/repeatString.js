@@ -23,6 +23,9 @@ const repeatStringRecursive = (s, n) => {
         return s + repeatStringRecursive(s, n - 1);
     }
 };
-let a = 'Repeating strings';
-console.log(repeatStringOneLine(a, 7));
+let firstString = 'Repeating strings';
+console.log(repeatStringOneLine(firstString, 7));
+console.log(repeatString(firstString, 7));
+console.log(repeatStringWhile(firstString, 3));
+console.log(repeatStringRecursive(firstString, 5));
 //# sourceMappingURL=repeatString.js.map

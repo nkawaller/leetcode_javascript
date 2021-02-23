@@ -27,9 +27,9 @@ const removeFalseForIn = (arr) => {
     }
     return result;
 };
-let a = [true, true, false, true, false];
-console.log(removeFalseOne(a));
-console.log(removeFalse(a));
-console.log(removeFalseForOf(a));
-console.log(removeFalseForIn(a));
+let arrOfBools = [true, true, false, true, false];
+console.log(removeFalseOne(arrOfBools));
+console.log(removeFalse(arrOfBools));
+console.log(removeFalseForOf(arrOfBools));
+console.log(removeFalseForIn(arrOfBools));
 //# sourceMappingURL=remove_false_values.js.map

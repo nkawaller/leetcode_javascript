@@ -15,8 +15,8 @@ const reverseStringForOf = (s: string): string => {
     return result
 }
 
-let a = 'Typescript reverse string'
+let forwardString = 'Typescript reverse string'
 
-console.log(reverseString(a))
-console.log(reverseOneLine(a))
-console.log(reverseStringForOf(a))
+console.log(reverseString(forwardString))
+console.log(reverseOneLine(forwardString))
+console.log(reverseStringForOf(forwardString))

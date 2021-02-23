@@ -44,9 +44,9 @@ const removeFalseForIn = (arr: boolean[]): boolean[] => {
 
 // Tests
 
-let a: boolean[] = [true, true, false, true, false]
+let arrOfBools: boolean[] = [true, true, false, true, false]
 
-console.log(removeFalseOne(a))
-console.log(removeFalse(a))
-console.log(removeFalseForOf(a))
-console.log(removeFalseForIn(a))
+console.log(removeFalseOne(arrOfBools))
+console.log(removeFalse(arrOfBools))
+console.log(removeFalseForOf(arrOfBools))
+console.log(removeFalseForIn(arrOfBools))
