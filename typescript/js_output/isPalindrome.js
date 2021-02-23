@@ -22,15 +22,15 @@ const isPalEvery = (s) => {
     const cleanS = s.toLowerCase().replace(/[\W_]/g, '');
     return cleanS.split('').every((c, i) => c === cleanS[cleanS.length - 1 - i]);
 };
-let a = "A man, a plan, a canal: Panama";
-let b = 'Race a car';
+let aPal = "A man, a plan, a canal: Panama";
+let bPal = 'Race a car';
 console.log('----For Each----');
-console.log(isPalForEach(a));
-console.log(isPalForEach(b));
+console.log(isPalForEach(aPal));
+console.log(isPalForEach(bPal));
 console.log('----Reduce----');
-console.log(isPalReduce(a));
-console.log(isPalReduce(b));
+console.log(isPalReduce(aPal));
+console.log(isPalReduce(bPal));
 console.log('----Every----');
-console.log(isPalEvery(a));
-console.log(isPalEvery(b));
+console.log(isPalEvery(aPal));
+console.log(isPalEvery(bPal));
 //# sourceMappingURL=isPalindrome.js.map
