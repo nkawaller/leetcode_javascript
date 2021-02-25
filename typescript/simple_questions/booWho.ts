@@ -9,7 +9,8 @@ const booWho = (bool: boolean): boolean => {
  */
 
 let boolCheckTrue = true;
-let boolCheckFalse = "hello";
+// let boolCheckFalse = "hello";
 
 console.log(booWho(boolCheckTrue));
-console.log(booWho(boolCheckFalse));
+// Typescript won't allow this... this is what TS is for!
+// console.log(booWho(boolCheckFalse));
