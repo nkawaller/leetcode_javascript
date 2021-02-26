@@ -12,6 +12,15 @@ const findElement = (arr: number[], num: numFunc): any => {
 
 console.log(findElement(numArr, (num) => num > 3));
 
-// let stringArr: string[] = ["cat", "dog", "pig", "bird", "walrus"];
 
-// console.log(findElement(stringArr, (string) => string.length > 4));
+interface stringFunc {
+    (str: string): boolean
+}
+
+let stringArr: string[] = ["cat", "dog", "pig", "bird", "walrus"];
+
+const findStringElement = (arr: string[], str: stringFunc): any => {
+    return arr.find(str)
+}
+
+console.log(findStringElement(stringArr, (string) => string.length > 4));
