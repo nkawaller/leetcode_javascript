@@ -12,4 +12,5 @@ let confirmStr1: string = "Learning Typescript";
 let confirmStr2: string = "script";
 let confirmStr3: string = "Learning";
 
-console.log(confirmEndingOneLine(confirmStr1, confirmStr2));
+console.log(confirmEndingOneLine(confirmStr1, confirmStr2)); // returns true
+console.log(confirmEndingOneLine(confirmStr1, confirmStr3)); // returns false
