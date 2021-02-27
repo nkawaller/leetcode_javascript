@@ -3,8 +3,9 @@ const truncate = (str, len) => {
     if (str.length < len) {
         return str;
     }
-    return `${str.slice(0, len)} ...`;
+    return `${str.slice(0, len)}...`;
 };
 let fullLengthString = "This is the string we want to truncate";
 console.log(truncate(fullLengthString, 15));
+console.log(truncate(fullLengthString, 45));
 //# sourceMappingURL=truncateString.js.map
