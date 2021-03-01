@@ -4,9 +4,7 @@
 
 const sumOfRange = (arr: number[]): number => {
   let result: number = 0;
-  arr = arr.sort(function (a, b) {
-    return a - b;
-  });
+  arr = arr.sort((a, b) => a - b);
   for (let i = arr[0]; i <= arr[1]; i++) {
     result += i;
   }
