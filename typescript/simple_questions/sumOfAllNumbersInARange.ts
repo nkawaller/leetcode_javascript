@@ -18,4 +18,6 @@ const sumOfRange = (arr: number[]): number => {
  */
 
 let arrOfTwoNumbers = [1,3]
+let unsortedArrofTwoNumbers = [3,1]
 console.log(sumOfRange(arrOfTwoNumbers));
+console.log(sumOfRange(unsortedArrofTwoNumbers));
