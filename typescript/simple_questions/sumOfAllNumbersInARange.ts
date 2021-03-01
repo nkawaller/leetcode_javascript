@@ -2,6 +2,10 @@
 // numbers, plus all the numbers in between. The smallest
 // number won't always come first.
 
+/**
+ * Using sort()
+ */
+
 const sumOfRange = (arr: number[]): number => {
   let result: number = 0;
   arr = arr.sort((a, b) => a - b);
@@ -11,6 +15,10 @@ const sumOfRange = (arr: number[]): number => {
   return result;
 };
 
+/**
+ * Using Math.min and Math.max
+ */
+
 const sumOfRangeMinMax = (arr: number[]): number => {
   let result = 0;
   let min = Math.min(...arr);
@@ -19,6 +27,19 @@ const sumOfRangeMinMax = (arr: number[]): number => {
     result += i;
   }
   return result;
+};
+
+/**
+ * Using reduce()
+ */
+
+const sumOfRangeReduce = (arr: number[]): number => {
+  let result: number[] = [];
+  arr = arr.sort((a, b) => a - b);
+  for (let i = arr[0]; i <= arr[1]; i++) {
+    result.push(i);
+  }
+  return result.reduce((acc, num) => acc + num, 0);
 };
 
 /**
@@ -35,3 +56,5 @@ console.log(sumOfRange(fiveAndTen));
 console.log(sumOfRange(unsortedFiveAndTen));
 console.log(sumOfRangeMinMax(fiveAndTen));
 console.log(sumOfRangeMinMax(unsortedFiveAndTen));
+console.log(sumOfRangeReduce(fiveAndTen));
+console.log(sumOfRangeReduce(unsortedFiveAndTen));

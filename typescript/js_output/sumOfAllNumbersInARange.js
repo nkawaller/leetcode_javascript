@@ -16,6 +16,14 @@ const sumOfRangeMinMax = (arr) => {
     }
     return result;
 };
+const sumOfRangeReduce = (arr) => {
+    let result = [];
+    arr = arr.sort((a, b) => a - b);
+    for (let i = arr[0]; i <= arr[1]; i++) {
+        result.push(i);
+    }
+    return result.reduce((acc, num) => acc + num, 0);
+};
 let arrOfTwoNumbers = [1, 3];
 let unsortedArrofTwoNumbers = [3, 1];
 let fiveAndTen = [5, 10];
@@ -26,4 +34,6 @@ console.log(sumOfRange(fiveAndTen));
 console.log(sumOfRange(unsortedFiveAndTen));
 console.log(sumOfRangeMinMax(fiveAndTen));
 console.log(sumOfRangeMinMax(unsortedFiveAndTen));
+console.log(sumOfRangeReduce(fiveAndTen));
+console.log(sumOfRangeReduce(unsortedFiveAndTen));
 //# sourceMappingURL=sumOfAllNumbersInARange.js.map
