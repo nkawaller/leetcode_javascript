@@ -24,6 +24,15 @@ const sumOfRangeReduce = (arr) => {
     }
     return result.reduce((acc, num) => acc + num, 0);
 };
+const sumOfRangeRecursive = (arr) => {
+    arr = arr.sort((a, b) => a - b);
+    if (arr[0] == arr[1]) {
+        return arr[0];
+    }
+    else {
+        return arr[1] + sumOfRangeRecursive([arr[0], arr[1] - 1]);
+    }
+};
 let arrOfTwoNumbers = [1, 3];
 let unsortedArrofTwoNumbers = [3, 1];
 let fiveAndTen = [5, 10];
@@ -36,4 +45,6 @@ console.log(sumOfRangeMinMax(fiveAndTen));
 console.log(sumOfRangeMinMax(unsortedFiveAndTen));
 console.log(sumOfRangeReduce(fiveAndTen));
 console.log(sumOfRangeReduce(unsortedFiveAndTen));
+console.log(sumOfRangeRecursive(fiveAndTen));
+console.log(sumOfRangeRecursive(unsortedFiveAndTen));
 //# sourceMappingURL=sumOfAllNumbersInARange.js.map

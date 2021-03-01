@@ -43,6 +43,19 @@ const sumOfRangeReduce = (arr: number[]): number => {
 };
 
 /**
+ * Using recursion
+ */
+
+const sumOfRangeRecursive = (arr: number[]): number => {
+  arr = arr.sort((a, b) => a - b);
+  if (arr[0] == arr[1]) {
+    return arr[0];
+  } else {
+    return arr[1] + sumOfRangeRecursive([arr[0], arr[1] - 1]);
+  }
+};
+
+/**
  * Tests
  */
 
@@ -58,3 +71,5 @@ console.log(sumOfRangeMinMax(fiveAndTen));
 console.log(sumOfRangeMinMax(unsortedFiveAndTen));
 console.log(sumOfRangeReduce(fiveAndTen));
 console.log(sumOfRangeReduce(unsortedFiveAndTen));
+console.log(sumOfRangeRecursive(fiveAndTen));
+console.log(sumOfRangeRecursive(unsortedFiveAndTen));
