@@ -1,24 +1,22 @@
 function lengthOfLongestSubstring(s) {
-    
-    if (s.length <= 1)
-        return s.length
-    
-    let lookup = new Map()
-    let len = s.length
-    let max = 0
-    let start = 0
+  if (s.length <= 1) return s.length;
 
-    for (let i = 0; i < len; i++) {
-        let c = s.charAt(i)
+  let lookup = new Map();
+  let len = s.length;
+  let max = 0;
+  let start = 0;
 
-        if (lookup.has(c) && lookup.get(c) >= start) {
-            start = lookup.get(c) + 1;
-        }
+  for (let i = 0; i < len; i++) {
+    let c = s.charAt(i);
 
-        lookup.set(c, i)
-
-        max = Math.max(max, i - start + 1)
+    if (lookup.has(c) && lookup.get(c) >= start) {
+      start = lookup.get(c) + 1;
     }
 
-    return max;
+    lookup.set(c, i);
+
+    max = Math.max(max, i - start + 1);
+  }
+
+  return max;
 }
