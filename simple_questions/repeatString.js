@@ -1,6 +1,5 @@
-const repeatString = (s, n) => s.repeat(n)
+const repeatString = (s, n) => s.repeat(n);
 
-
-let a = 'Repeating strings'
+let a = "Repeating strings";
 
 console.log(repeatString(a, 7));
