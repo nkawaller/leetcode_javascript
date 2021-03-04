@@ -55,5 +55,9 @@ console.log(decRev(a));
 
 module.exports = {
   reverseString,
-  revArrow
+  revArrow,
+  decRev,
+  revForOf,
+  revForIn,
+  revWhile
 }
