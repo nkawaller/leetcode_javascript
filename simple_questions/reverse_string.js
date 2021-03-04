@@ -52,3 +52,8 @@ console.log(revForOf(a));
 console.log(revForIn(a));
 console.log(revWhile(a));
 console.log(decRev(a));
+
+module.exports = {
+  reverseString,
+  revArrow
+}
