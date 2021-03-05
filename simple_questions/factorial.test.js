@@ -23,3 +23,11 @@ test("find factorial recursively", () => {
 test("find factorial recursively", () => {
   expect(recursiveFact(7)).toEqual(5040);
 });
+
+// test("find factorial using reduce", () => {
+//   expect(factReduce(5)).toEqual(120);
+// });
+
+// test("find factorial using reduce", () => {
+//   expect(factReduce(7)).toBe(5040);
+// });
