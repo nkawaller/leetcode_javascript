@@ -69,6 +69,15 @@ const isPalEvery = (s) => {
   return cleanS.split("").every((c, i) => c === cleanS[cleanS.length - 1 - i]);
 };
 
+module.exports = {
+  isPalindrome,
+  isPal,
+  isPalForOf,
+  isPalindromeForEach,
+  isPalReduce,
+  isPalEvery
+}
+
 /**
  * Tests
  */
