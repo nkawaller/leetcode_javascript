@@ -46,3 +46,10 @@ console.log(removeFalseOneLine(a));
 console.log(removeFalse(a));
 console.log(removeFalseForOf(a));
 console.log(removeFalseForIn(a));
+
+module.exports = {
+  removeFalseOneLine,
+  removeFalse,
+  removeFalseForIn,
+  removeFalseForOf
+}
