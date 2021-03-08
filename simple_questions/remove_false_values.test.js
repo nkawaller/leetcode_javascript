@@ -4,3 +4,10 @@ const {
   removeFalseForOf,
   removeFalseForIn,
 } = require("./remove_false_values");
+
+
+let booleanArray = [true, true, false, true, false];
+
+test('Remove false values from an array', () => {
+    expect(removeFalseOneLine(booleanArray)).toStrictEqual([true, true, true])
+})
