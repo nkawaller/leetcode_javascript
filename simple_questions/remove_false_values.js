@@ -38,18 +38,9 @@ const removeFalseForIn = (arr) => {
   return result;
 };
 
-// Tests
-
-let a = [true, true, false, true, false];
-
-console.log(removeFalseOneLine(a));
-console.log(removeFalse(a));
-console.log(removeFalseForOf(a));
-console.log(removeFalseForIn(a));
-
 module.exports = {
   removeFalseOneLine,
   removeFalse,
   removeFalseForIn,
-  removeFalseForOf
-}
+  removeFalseForOf,
+};
