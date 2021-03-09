@@ -10,6 +10,8 @@ const TitleCase = (s: string): string => {
     .join(" ");
 };
 
+module.exports = TitleCase;
+
 /**
  * Tests
  */
