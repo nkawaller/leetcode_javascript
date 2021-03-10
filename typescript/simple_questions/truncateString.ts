@@ -8,12 +8,3 @@ const truncate = (str: string, len: number): string => {
 };
 
 module.exports = truncate;
-
-/**
- * Tests
- */
-
-let fullLengthString: string = "This is the string we want to truncate";
-
-console.log(truncate(fullLengthString, 15));
-console.log(truncate(fullLengthString, 45));
