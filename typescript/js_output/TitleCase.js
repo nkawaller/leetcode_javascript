@@ -8,6 +8,5 @@ const TitleCase = (s) => {
     })
         .join(" ");
 };
-let lowerSentence = "title case a sentence in javascript";
-console.log(TitleCase(lowerSentence));
+module.exports = TitleCase;
 //# sourceMappingURL=TitleCase.js.map

@@ -11,10 +11,3 @@ const TitleCase = (s: string): string => {
 };
 
 module.exports = TitleCase;
-
-/**
- * Tests
- */
-
-let lowerSentence = "title case a sentence in javascript";
-console.log(TitleCase(lowerSentence));

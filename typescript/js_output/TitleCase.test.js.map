@@ -1,0 +1,1 @@
+{"version":3,"file":"TitleCase.test.js","sourceRoot":"","sources":["../simple_questions/TitleCase.test.ts"],"names":[],"mappings":";AACA,MAAM,SAAS,GAAG,OAAO,CAAC,aAAa,CAAC,CAAA;AAGxC,IAAI,aAAa,GAAG,qCAAqC,CAAC;AAE1D,IAAI,CAAC,uBAAuB,EAAE,GAAG,EAAE;IAC/B,MAAM,CAAC,SAAS,CAAC,aAAa,CAAC,CAAC,CAAC,OAAO,CAAC,qCAAqC,CAAC,CAAA;AACnF,CAAC,CAAC,CAAC;AARH,iBAAS,EAAE,CAAC"}
