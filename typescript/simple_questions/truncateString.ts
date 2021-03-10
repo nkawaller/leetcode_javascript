@@ -7,6 +7,8 @@ const truncate = (str: string, len: number): string => {
   return `${str.slice(0, len)}...`;
 };
 
+module.exports = truncate;
+
 /**
  * Tests
  */
