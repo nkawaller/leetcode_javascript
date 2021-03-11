@@ -55,6 +55,13 @@ const sumOfRangeRecursive = (arr: number[]): number => {
   }
 };
 
+module.exports = {
+  sumOfRange,
+  sumOfRangeMinMax,
+  sumOfRangeRecursive,
+  sumOfRangeReduce
+}
+
 /**
  * Tests
  */
