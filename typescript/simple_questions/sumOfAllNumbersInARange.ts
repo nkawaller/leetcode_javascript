@@ -59,24 +59,5 @@ module.exports = {
   sumOfRange,
   sumOfRangeMinMax,
   sumOfRangeRecursive,
-  sumOfRangeReduce
-}
-
-/**
- * Tests
- */
-
-let arrOfTwoNumbers = [1, 3];
-let unsortedArrofTwoNumbers = [3, 1];
-let fiveAndTen = [5, 10];
-let unsortedFiveAndTen = [10, 5];
-console.log(sumOfRange(arrOfTwoNumbers));
-console.log(sumOfRange(unsortedArrofTwoNumbers));
-console.log(sumOfRange(fiveAndTen));
-console.log(sumOfRange(unsortedFiveAndTen));
-console.log(sumOfRangeMinMax(fiveAndTen));
-console.log(sumOfRangeMinMax(unsortedFiveAndTen));
-console.log(sumOfRangeReduce(fiveAndTen));
-console.log(sumOfRangeReduce(unsortedFiveAndTen));
-console.log(sumOfRangeRecursive(fiveAndTen));
-console.log(sumOfRangeRecursive(unsortedFiveAndTen));
+  sumOfRangeReduce,
+};
