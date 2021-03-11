@@ -33,6 +33,12 @@ const sumOfRangeRecursive = (arr) => {
         return arr[1] + sumOfRangeRecursive([arr[0], arr[1] - 1]);
     }
 };
+module.exports = {
+    sumOfRange,
+    sumOfRangeMinMax,
+    sumOfRangeRecursive,
+    sumOfRangeReduce
+};
 let arrOfTwoNumbers = [1, 3];
 let unsortedArrofTwoNumbers = [3, 1];
 let fiveAndTen = [5, 10];
