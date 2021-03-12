@@ -5,7 +5,4 @@ const sliceAndSplice = (arr1, arr2, val) => {
     return newArr;
 };
 module.exports = sliceAndSplice;
-let firstArray = [1, 5];
-let secondArray = [2, 3, 4];
-console.log(sliceAndSplice(firstArray, secondArray, 1));
 //# sourceMappingURL=sliceAndSplice.js.map

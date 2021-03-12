@@ -11,12 +11,3 @@ const sliceAndSplice = (
 };
 
 module.exports = sliceAndSplice;
-
-/**
- * Tests
- */
-
-let firstArray: number[] = [1, 5];
-let secondArray: number[] = [2, 3, 4];
-
-console.log(sliceAndSplice(firstArray, secondArray, 1));
