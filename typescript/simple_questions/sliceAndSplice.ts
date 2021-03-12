@@ -10,6 +10,8 @@ const sliceAndSplice = (
   return newArr;
 };
 
+module.exports = sliceAndSplice;
+
 /**
  * Tests
  */
