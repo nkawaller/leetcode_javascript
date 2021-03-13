@@ -5,6 +5,18 @@ const {
   reverseStringForOf,
 } = require("./reverseString");
 
-test('Reverse a string', () => {
-    expect()
-})
+let forwardString = "Typescript reverse string";
+
+test("Reverse a string", () => {
+  expect(reverseString(forwardString)).toMatch("gnirts esrever tpircsepyT");
+});
+
+test("Reverse a string", () => {
+  expect(reverseOneLine(forwardString)).toMatch("gnirts esrever tpircsepyT");
+});
+
+test("Reverse a string", () => {
+  expect(reverseStringForOf(forwardString)).toMatch(
+    "gnirts esrever tpircsepyT"
+  );
+});
