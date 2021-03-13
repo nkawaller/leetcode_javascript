@@ -15,6 +15,12 @@ const reverseStringForOf = (s: string): string => {
     return result
 }
 
+module.exports = {
+    reverseString,
+    reverseOneLine,
+    reverseStringForOf
+}
+
 let forwardString = 'Typescript reverse string'
 
 console.log(reverseString(forwardString))
