@@ -45,14 +45,3 @@ module.exports = {
   repeatStringWhile,
   repeatStringRecursive,
 };
-
-/**
- * Tests
- */
-
-let firstString: string = "Repeating strings";
-
-console.log(repeatStringOneLine(firstString, 7));
-console.log(repeatString(firstString, 7));
-console.log(repeatStringWhile(firstString, 3));
-console.log(repeatStringRecursive(firstString, 5));

@@ -29,9 +29,4 @@ module.exports = {
     repeatStringWhile,
     repeatStringRecursive,
 };
-let firstString = "Repeating strings";
-console.log(repeatStringOneLine(firstString, 7));
-console.log(repeatString(firstString, 7));
-console.log(repeatStringWhile(firstString, 3));
-console.log(repeatStringRecursive(firstString, 5));
 //# sourceMappingURL=repeatString.js.map
