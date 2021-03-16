@@ -27,6 +27,12 @@ const removeFalseForIn = (arr) => {
     }
     return result;
 };
+module.exports = {
+    removeFalseOne,
+    removeFalse,
+    removeFalseForIn,
+    removeFalseForOf,
+};
 let arrOfBools = [true, true, false, true, false];
 console.log(removeFalseOne(arrOfBools));
 console.log(removeFalse(arrOfBools));
