@@ -42,12 +42,3 @@ module.exports = {
   removeFalseForIn,
   removeFalseForOf,
 };
-
-// Tests
-
-let arrOfBools: boolean[] = [true, true, false, true, false];
-
-console.log(removeFalseOne(arrOfBools));
-console.log(removeFalse(arrOfBools));
-console.log(removeFalseForOf(arrOfBools));
-console.log(removeFalseForIn(arrOfBools));

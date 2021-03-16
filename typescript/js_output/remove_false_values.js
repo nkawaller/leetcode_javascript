@@ -33,9 +33,4 @@ module.exports = {
     removeFalseForIn,
     removeFalseForOf,
 };
-let arrOfBools = [true, true, false, true, false];
-console.log(removeFalseOne(arrOfBools));
-console.log(removeFalse(arrOfBools));
-console.log(removeFalseForOf(arrOfBools));
-console.log(removeFalseForIn(arrOfBools));
 //# sourceMappingURL=remove_false_values.js.map
