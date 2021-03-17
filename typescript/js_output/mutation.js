@@ -9,8 +9,5 @@ const mutation = (arr) => {
     }
     return true;
 };
-let testArrFalse = ['plan', 'planet'];
-let testArrTrue = ['planet', 'plan'];
-console.log(mutation(testArrFalse));
-console.log(mutation(testArrTrue));
+module.exports = mutation;
 //# sourceMappingURL=mutation.js.map
