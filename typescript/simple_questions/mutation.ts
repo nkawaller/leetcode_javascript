@@ -13,6 +13,8 @@ const mutation = (arr: string[]): boolean => {
     return true
 }
 
+module.exports = mutation;
+
 
 
 let testArrFalse = ['plan', 'planet']
