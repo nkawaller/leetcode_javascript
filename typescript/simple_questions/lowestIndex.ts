@@ -8,12 +8,3 @@ const lowestIndex = (arr: number[], val: number): number => {
 };
 
 module.exports = lowestIndex;
-
-/**
- * Tests
- */
-
-let arrayWithoutVal: number[] = [1, 2, 3, 5, 6, 7, 8, 9];
-let insertedValue: number = 4;
-
-console.log(lowestIndex(arrayWithoutVal, insertedValue));
