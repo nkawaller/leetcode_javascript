@@ -7,6 +7,8 @@ const lowestIndex = (arr: number[], val: number): number => {
   return arr.indexOf(val);
 };
 
+module.exports = lowestIndex;
+
 /**
  * Tests
  */
