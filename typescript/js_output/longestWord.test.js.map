@@ -1,0 +1,1 @@
+{"version":3,"file":"longestWord.test.js","sourceRoot":"","sources":["../simple_questions/longestWord.test.ts"],"names":[],"mappings":";AAEA,MAAM,eAAe,GAAG,OAAO,CAAC,eAAe,CAAC,CAAC;AAEjD,IAAI,aAAa,GAAW,gDAAgD,CAAC;AAE7E,IAAI,CAAC,iDAAiD,EAAE,GAAG,EAAE;IAC3D,MAAM,CAAC,eAAe,CAAC,aAAa,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC;AACjD,CAAC,CAAC,CAAC;AARH,iBAAS,EAAE,CAAC"}

@@ -3,6 +3,5 @@ const findLongestWord = (str) => {
     let lengths = str.split(" ").map((word) => word.length);
     return Math.max(...lengths);
 };
-let stringOfWords = "Trying to find the longest word in this string";
-console.log(findLongestWord(stringOfWords));
+module.exports = findLongestWord;
 //# sourceMappingURL=longestWord.js.map

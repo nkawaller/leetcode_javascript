@@ -6,11 +6,3 @@ const findLongestWord = (str: string): number => {
 };
 
 module.exports = findLongestWord;
-
-/**
- * Tests
- */
-
-let stringOfWords: string = "Trying to find the longest word in this string";
-
-console.log(findLongestWord(stringOfWords));
