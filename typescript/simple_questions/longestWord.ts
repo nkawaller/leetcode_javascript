@@ -5,6 +5,8 @@ const findLongestWord = (str: string): number => {
   return Math.max(...lengths);
 };
 
+module.exports = findLongestWord;
+
 /**
  * Tests
  */
