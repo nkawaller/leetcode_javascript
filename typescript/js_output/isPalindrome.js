@@ -22,6 +22,11 @@ const isPalEvery = (s) => {
     const cleanS = s.toLowerCase().replace(/[\W_]/g, '');
     return cleanS.split('').every((c, i) => c === cleanS[cleanS.length - 1 - i]);
 };
+module.exports = {
+    isPalForEach,
+    isPalReduce,
+    isPalEvery
+};
 let aPal = "A man, a plan, a canal: Panama";
 let bPal = 'Race a car';
 console.log('----For Each----');
