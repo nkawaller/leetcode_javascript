@@ -17,7 +17,6 @@ const isPalForEach = (s: string): boolean => {
     return isPal
 }
 
-
 /**
  * Using reduce()
  */
@@ -40,6 +39,12 @@ const isPalReduce = (s: string) => {
 const isPalEvery = (s: string): boolean => {
     const cleanS: string = s.toLowerCase().replace(/[\W_]/g, '');
     return cleanS.split('').every((c,i) => c === cleanS[cleanS.length - 1 - i])
+}
+
+module.exports = {
+    isPalForEach,
+    isPalReduce,
+    isPalEvery
 }
 
 
