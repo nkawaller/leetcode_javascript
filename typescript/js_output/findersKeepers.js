@@ -9,4 +9,5 @@ const findStringElement = (arr, str) => {
     return arr.find(str);
 };
 console.log(findStringElement(stringArr, (string) => string.length > 4));
+module.exports = { findElement, findStringElement };
 //# sourceMappingURL=findersKeepers.js.map
