@@ -24,12 +24,5 @@ const factRecursive = (n) => {
 const factReduce = (arr) => {
     return arr.reduce((result, i) => result * i);
 };
-console.log(fact(5));
-console.log(fact(7));
-console.log(factRecursive(5));
-console.log(factRecursive(7));
-console.log(factForOf([1, 2, 3, 4, 5]));
-console.log(factForOf([1, 2, 3, 4, 5, 6, 7]));
-console.log(factReduce([1, 2, 3, 4, 5]));
-console.log(factReduce([1, 2, 3, 4, 5, 6, 7]));
+module.exports = { fact, factForOf, factRecursive, factReduce };
 //# sourceMappingURL=factorial.js.map
