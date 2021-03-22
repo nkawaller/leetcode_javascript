@@ -41,6 +41,8 @@ const factReduce = (arr: number[]): number => {
     return arr.reduce((result, i) => result * i);
 }
 
+module.exports = { fact, factForOf, factRecursive, factReduce };
+
 
 
 console.log(fact(5))
