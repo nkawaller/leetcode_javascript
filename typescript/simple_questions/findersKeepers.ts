@@ -24,3 +24,6 @@ const findStringElement = (arr: string[], str: stringFunc): any => {
 }
 
 console.log(findStringElement(stringArr, (string) => string.length > 4));
+
+
+module.exports = { findElement, findStringElement };
