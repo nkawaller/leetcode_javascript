@@ -11,7 +11,7 @@ test("Find the first number in an array to meet a certian criteria", () => {
 });
 
 test("Find the first string in an array to meet a certian criteria", () => {
-  expect(findElement(stringArr, (string: string) => string.length > 4)).toBe(
+  expect(findStringElement(stringArr, (string: string) => string.length > 4)).toBe(
     "walrus"
   );
 });
