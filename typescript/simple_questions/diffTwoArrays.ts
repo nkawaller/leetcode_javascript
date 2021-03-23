@@ -19,4 +19,4 @@ let stringArr2: string[] = ["bird", "fish", "pig", "horse"];
 console.log(diffTwoArrays(arr1, arr2));
 console.log(diffTwoArrays(stringArr1, stringArr2));
 
-module.exports = { diffTwoArrays };
+module.exports = diffTwoArrays;
