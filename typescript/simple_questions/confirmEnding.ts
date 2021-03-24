@@ -9,16 +9,3 @@ const confirmEndingSlice = (str1: string, str2: string): boolean => {
 };
 
 module.exports = { confirmEndingOneLine, confirmEndingSlice };
-
-/**
- * Tests
- */
-
-let confirmStr1: string = "Learning Typescript";
-let confirmStr2: string = "script";
-let confirmStr3: string = "Learning";
-
-console.log(confirmEndingOneLine(confirmStr1, confirmStr2)); // returns true
-console.log(confirmEndingOneLine(confirmStr1, confirmStr3)); // returns false
-console.log(confirmEndingSlice(confirmStr1, confirmStr2)); // returns true
-console.log(confirmEndingSlice(confirmStr1, confirmStr3)); // returns false
