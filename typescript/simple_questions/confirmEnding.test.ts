@@ -13,3 +13,11 @@ test("Determine whether two string have the same ending", () => {
 test("Determine whether two string have the same ending", () => {
   expect(confirmEndingOneLine(confirmStr1, confirmStr3)).toBeTruthy;
 });
+
+test("Determine whether two string have the same ending", () => {
+  expect(confirmEndingSlice(confirmStr1, confirmStr2)).toBeTruthy;
+});
+
+test("Determine whether two string have the same ending", () => {
+  expect(confirmEndingSlice(confirmStr1, confirmStr3)).toBeTruthy;
+});
