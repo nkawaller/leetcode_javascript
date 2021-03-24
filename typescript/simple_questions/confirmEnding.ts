@@ -8,6 +8,8 @@ const confirmEndingSlice = (str1: string, str2: string): boolean => {
   return str1.slice(-str2.length) === str2;
 };
 
+module.exports = { confirmEndingOneLine, confirmEndingSlice };
+
 /**
  * Tests
  */
