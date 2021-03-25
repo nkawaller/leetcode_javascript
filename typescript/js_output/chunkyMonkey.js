@@ -6,6 +6,5 @@ const chunkyMonkey = (arr, size) => {
     }
     return result;
 };
-let fullArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-console.log(chunkyMonkey(fullArray, 3));
+module.exports = chunkyMonkey;
 //# sourceMappingURL=chunkyMonkey.js.map
