@@ -8,6 +8,7 @@ const chunkyMonkey = (arr: number[], size: number): number[] => {
     return result
 }
 
+module.exports = chunkyMonkey;
 
 let fullArray: number[] = [1,2,3,4,5,6,7,8,9]
 console.log(chunkyMonkey(fullArray, 3));
