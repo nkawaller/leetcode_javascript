@@ -1,1 +1,1 @@
-{"version":3,"file":"booWho.js","sourceRoot":"","sources":["../simple_questions/booWho.ts"],"names":[],"mappings":";AAEA,MAAM,MAAM,GAAG,CAAC,IAAa,EAAW,EAAE;IACxC,OAAO,OAAO,IAAI,KAAK,SAAS,CAAC;AACnC,CAAC,CAAC;AAMF,IAAI,aAAa,GAAG,IAAI,CAAC;AAGzB,OAAO,CAAC,GAAG,CAAC,MAAM,CAAC,aAAa,CAAC,CAAC,CAAC"}
+{"version":3,"file":"booWho.js","sourceRoot":"","sources":["../simple_questions/booWho.ts"],"names":[],"mappings":";AAEA,MAAM,MAAM,GAAG,CAAC,IAAa,EAAW,EAAE;IACxC,OAAO,OAAO,IAAI,KAAK,SAAS,CAAC;AACnC,CAAC,CAAC;AAEF,MAAM,CAAC,OAAO,GAAG,MAAM,CAAC"}

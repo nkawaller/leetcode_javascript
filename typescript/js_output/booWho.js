@@ -2,6 +2,5 @@
 const booWho = (bool) => {
     return typeof bool === "boolean";
 };
-let boolCheckTrue = true;
-console.log(booWho(boolCheckTrue));
+module.exports = booWho;
 //# sourceMappingURL=booWho.js.map

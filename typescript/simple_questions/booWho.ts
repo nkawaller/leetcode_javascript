@@ -5,14 +5,3 @@ const booWho = (bool: boolean): boolean => {
 };
 
 module.exports = booWho;
-
-/**
- * Tests
- */
-
-let boolCheckTrue = true;
-// let boolCheckFalse = "hello";
-
-console.log(booWho(boolCheckTrue));
-// Typescript won't allow this... this is what TS is for!
-// console.log(booWho(boolCheckFalse));
