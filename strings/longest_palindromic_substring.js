@@ -19,3 +19,17 @@ function scanOutward(s, longest, left, right) {
       : longest;
   }
 }
+
+const longestPalindromicSubstring = (str) => {
+  if (str === undefined || str === null || str.length < 1) {
+    return '';
+  }
+}
+
+const slidingWindow = (str, left, right) => {
+  while (left >= 0 && right < str.length && str.charAt(left) === str.charAt(right)) {
+    left --;
+    right ++;
+  }
+  return right - left - 1;
+}
